@@ -50,12 +50,12 @@ It offers a practical and modular approach to fighting Sybil attacks in crypto b
 
 ---
 
-## 💬 Get Involved
+## Get Involved
 
 We're looking for feedback from identity researchers, privacy builders, and crypto devs.
 
-- 🗨️ [Telegram Group](https://t.me/bringid) 
-- 🧠 [Open a GitHub issue](https://github.com/bringid/technical-paper/issues) to discuss or suggest improvements
+- [Telegram Group](https://t.me/bringid) 
+- [Open a GitHub issue](https://github.com/bringid/technical-paper/issues) to discuss or suggest improvements
 
 ---
 
