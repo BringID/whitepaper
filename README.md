@@ -44,9 +44,9 @@ It offers a practical and modular approach to fighting Sybil attacks in crypto b
 
 | Phase             | Who is Trusted                     | Privacy Guarantee         |
 |------------------|------------------------------------|---------------------------|
-| Initial Setup     | BringID team                       | Enforced via MPC-TLS      |
-| TEE Phase         | Hardware vendor (e.g., Intel SGX)  | Enforced via MPC-TLS      |
-| Decentralized     | Independent notary network         | Enforced via MPC-TLS + auditability |
+| Initial Setup     | BringID team                       | MPC-TLS + Semaphore      |
+| TEE Phase         | Hardware vendor (e.g., Intel SGX)  | MPC-TLS + Semaphore      |
+| Decentralized     | Independent notary network         | MPC-TLS + Semaphore      |
 
 ---
 
