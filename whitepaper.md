@@ -33,7 +33,7 @@ BringID introduces a new model: users prove control over these accounts through 
 
 To validate a Web account, the BringID Extension and the TLS Notary cooperatively execute a joint MPC‑TLS session with the target Web service. The interaction is shown in Figure 1.
 
-<img width="1248" alt="BringID_account_verification" src="https://gist.github.com/user-attachments/assets/aa4ec89d-7a3c-496b-9e88-6c26f0ce1a03" />
+<img width="1248" alt="BringID_account_verification" src="/diagrams/BringID_account_verification.png" />
 
 - **Joint MPC‑TLS handshake**  
   The Extension and Notary behave as a single TLS client. Together they negotiate a session with the Web Service (e.g., Uber) and request only the data needed for the selected credential type.
@@ -52,7 +52,7 @@ Further details on the MPC‑TLS construction and its security guarantees are av
 
 The process is shown in Figure 2, where multiple user-submitted attestations are collected by the Relayer and submitted as a single batch to the Credential Registry smart contract.
 
-<img width="1408" alt="submitting_vcs" src="https://gist.github.com/user-attachments/assets/afc29140-019f-41eb-8888-ec7b3a02f41c" />
+<img width="1408" alt="submitting_vcs" src="/diagrams/submitting_vcs.png" />
 
 1. BringID Extension generates a Semaphore identity commitment using the private, locally stored Master Key and prepares a task for the Relayer, which includes the Credential and the generated commitment.
 2. The Relayer batches tasks from multiple users and submits them to the Credential Registry periodically (typically once per day).
@@ -67,7 +67,7 @@ To learn more about Semaphore and its group inclusion proofs, visit the [Semapho
 
 The proof delivery process is shown in Figure 3. A verifying party requests inclusion proofs from the user's BringID Extension, which are then submitted onchain for validation.
 
-<img width="1568" alt="providing_proofs_to_verifier" src="https://gist.github.com/user-attachments/assets/94232e2d-f2a9-47e6-986c-f3d4ea7941ad" />
+<img width="1568" alt="providing_proofs_to_verifier" src="/diagrams/providing_proofs_to_verifier.png" />
 
 1. **Request proofs**  
    The verifying party (a Web App) requests specific credential proofs from the user's BringID Extension.
@@ -132,7 +132,7 @@ When a user later interacts with a third-party application, they generate zero-k
 
 Figure 4 below illustrates how the user’s accounts are committed to Credential Groups, and how independent group proofs are combined and sent to a Verifying Party:
 
-<img width="1632" alt="privacy_2" src="https://gist.github.com/user-attachments/assets/719e08cf-3e01-4db5-9488-0c7c33acf9ff" />
+<img width="1632" alt="privacy_2" src="/diagrams/privacy_2.png" />
 
 This architecture ensures Verifying Parties can compute Trust Scores or apply eligibility filters—without ever learning user identities, linking accounts, or tracking behavior across apps.
 
